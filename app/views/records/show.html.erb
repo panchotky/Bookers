@@ -1,0 +1,11 @@
+<div class="notice">
+<%= notice %>
+</div>
+<h2>Title</h2>
+<p> <%= @record.title %></p>
+
+<h2>Body</h2>
+<p> <%= @record.body %></p>
+
+<%= link_to "Edit", edit_record_path(@record.id), class: "edit_#{@record.id}"%>
+<%= link_to 'back', :back , class: "back"%> 
